@@ -1,37 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700&display=swap);
-
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus,
-:active {
+:focus, :active {
   outline: none;
 }
 
-a:focus,
-a:active {
+a:focus, a:active {
   outline: none;
 }
 
-nav,
-footer,
-header,
-aside {
+nav, footer, header, aside {
   display: block;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   min-width: 320px;
 }
@@ -44,9 +35,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
   font-family: "Raleway", sans-serif;
 }
 
@@ -63,8 +52,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -80,12 +68,7 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -104,7 +87,6 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "icons";
   display: swap;
@@ -113,7 +95,6 @@ input[type=search]::-webkit-search-results-decoration {
   font-style: normal;
   font-display: block;
 }
-
 [class^=_icon-]:before,
 [class*=" _icon-"]:before {
   font-family: "icons";
@@ -159,9 +140,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 100;
   text-transform: uppercase;
   line-height: 1.1;
@@ -176,13 +155,11 @@ a {
   width: 100%;
   height: 100%;
   position: fixed;
-  -webkit-perspective: 1500px;
-          perspective: 1500px;
+  perspective: 1500px;
 }
 
 .gallery {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   height: 100%;
 }
 
@@ -190,150 +167,93 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1), opacity 0.75s ease;
-  -o-transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1), opacity 0.75s ease;
+  align-items: center;
+  justify-content: center;
   transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1), opacity 0.75s ease;
   will-change: transform;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   text-align: center;
 }
-
 .item__icon {
   margin-right: 7px;
 }
-
 .item__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   width: calc((1vw + 1vh) * 20);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .item__info {
   border-top: 1px solid rgb(180, 180, 180);
   border-bottom: 1px solid rgb(180, 180, 180);
   padding: 10px 0;
   margin-top: 3vh;
   color: rgb(180, 180, 180);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .item__link {
   text-transform: uppercase;
   margin-top: 3vh;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .item__link_duo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-transform: uppercase;
   margin-top: 3vh;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   gap: 20px;
 }
-
 .item__link_duo a {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-
 .item__link_duo a:hover {
   color: rgb(180, 180, 180);
 }
-
 .item__link_contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-transform: uppercase;
   margin-top: 3vh;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   gap: 20px;
   font-size: calc((1vw + 1vh) * 1.5);
 }
-
 .item__link_contact a {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   vertical-align: bottom;
 }
-
 .item__link_contact a:hover {
   color: rgb(180, 180, 180);
 }
-
 .item__link a {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .item__link a:hover {
   color: rgb(180, 180, 180);
 }
-
 .item__content h1 {
   text-align: center;
   font-size: calc((1vw + 1vh) * 3.3);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .item__content h2 {
   text-align: center;
   font-size: calc((1vw + 1vh) * 3);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .item__content h3 {
   text-align: center;
   font-size: calc((1vw + 1vh) * 2.2);
 }
-
 .item__content p {
   margin-top: 3vh;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .item__media {
   position: relative;
   width: calc((1vw + 1vh) * 26);
@@ -341,15 +261,12 @@ a {
   background-position: center;
   background-size: cover;
 }
-
 .item__media_left {
   right: calc(13 * (1vw + 1vh) + 30px);
 }
-
 .item__media_right {
   left: calc(13 * (1vw + 1vh) + 30px);
 }
-
 .item_bg {
   background-color: rgba(0, 0, 0, 0.87);
 }
